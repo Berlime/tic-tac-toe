@@ -1,0 +1,39 @@
+/**
+ * Theme Colors
+ * 
+ * Change the color values below to customize your app's theme.
+ * These are CSS custom properties that can be used throughout your app.
+ */
+
+:root {
+  /* Player X colors */
+  --color-player-x: oklch(0.45 0.15 270); /* indigo-600 */
+  --color-player-x-light: oklch(0.52 0.15 270); /* indigo-500 */
+  --color-player-x-dark: oklch(0.38 0.15 270); /* indigo-700 */
+
+  /* Player O colors */
+  --color-player-o: oklch(0.45 0.15 300); /* purple-600 */
+  --color-player-o-light: oklch(0.52 0.15 300); /* purple-500 */
+  --color-player-o-dark: oklch(0.38 0.15 300); /* purple-700 */
+
+  /* Accent colors */
+  --color-trophy: oklch(0.80 0.15 90); /* yellow-500 */
+
+  /* Background colors */
+  --color-bg-gradient-from: oklch(0.52 0.15 270); /* indigo-500 */
+  --color-bg-gradient-to: oklch(0.45 0.15 300); /* purple-600 */
+  --color-bg-card: oklch(1 0 0); /* white */
+  --color-bg-cell-filled: oklch(0.96 0 0); /* gray-100 */
+  --color-bg-cell-hover: oklch(0.98 0 0); /* gray-50 */
+  --color-bg-button-disabled: oklch(0.65 0 0); /* gray-400 */
+
+  /* Text colors */
+  --color-text-primary: oklch(0.35 0 0); /* gray-700 */
+  --color-text-secondary: oklch(0.50 0 0); /* gray-500 */
+  --color-text-white: oklch(1 0 0); /* white */
+
+  /* Border colors */
+  --color-border-cell: oklch(0.85 0 0); /* gray-300 */
+  --color-border-input: oklch(0.85 0 0); /* gray-300 */
+}
+
