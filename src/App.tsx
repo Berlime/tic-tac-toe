@@ -4,6 +4,7 @@ import { PlayerInfo } from './components/PlayerInfo';
 import { GameBoard } from './components/GameBoard';
 import { GameStatus } from './components/GameStatus';
 import { GameControls } from './components/GameControls';
+import { InstallPrompt } from './components/InstallPrompt';
 
 function App() {
   const {
@@ -26,13 +27,16 @@ function App() {
 
   if (!gameStarted) {
     return (
-      <GameSetup
-        players={players}
-        totalRounds={totalRounds}
-        onPlayerChange={updatePlayer}
-        onRoundsChange={updateRounds}
-        onStartGame={handleStartGame}
-      />
+      <>
+        <GameSetup
+          players={players}
+          totalRounds={totalRounds}
+          onPlayerChange={updatePlayer}
+          onRoundsChange={updateRounds}
+          onStartGame={handleStartGame}
+        />
+        <InstallPrompt />
+      </>
     );
   }
 
@@ -66,6 +70,7 @@ function App() {
           />
         </div>
       </div>
+      <InstallPrompt />
     </div>
   );
 }
